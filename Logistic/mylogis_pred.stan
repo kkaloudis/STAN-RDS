@@ -1,4 +1,4 @@
-// Stan model for logistic reconstruction
+// Stan model for logistic map reconstruction & prediction
 data {
   int < lower = 1 > N; // Sample size
   vector[N] x; // map
