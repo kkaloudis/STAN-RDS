@@ -1,4 +1,4 @@
-// Stan model for simple linear regression
+// Stan model for logistic map reconstruction
 data {
  int < lower = 1 > N; // Sample size
  vector[N] x; // map
