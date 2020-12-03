@@ -10,14 +10,14 @@ functions {
 
 data {
   int < lower = 1 > N; // Sample size
-  matrix[N,2] x; // map
+  matrix[N,2] x; // map data
 }
 
 parameters {
   real theta[4]; // Control parameter
   row_vector[2] x0; // Initial condition
-  corr_matrix[2] Omega;// prior correlation
-  vector<lower=0>[2] tau; // prior scale
+  corr_matrix[2] Omega;// prior correlation matrix
+  vector<lower=0>[2] tau; // prior scales
   // transformed parameters {
   //   matrix[2,2] Sigma;
   //   Sigma = diag_matrix(tau) * Sigma * diag_matrix(tau);
