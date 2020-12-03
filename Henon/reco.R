@@ -24,7 +24,7 @@ library("gdata")
 library("bayesplot")
 ##
 rm(list=ls(all=T))
-setwd("/home/kkaloudis/Documents/Mathematics/PostDoc Napoli/Literature/Misc/STAN/my henon")
+setwd("PATH")
 #############################################################################
 
 henon <- function(theta,x){
